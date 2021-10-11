@@ -25,7 +25,7 @@ services:
     volumes:
       - .:/app:cached
       - rails_cache:/app/tmp/cache:cached
-      - bundle:/bundle:cached
+      - bundle:/usr/local/bundle
     ports:
       - '8080:3000'
     depends_on:
